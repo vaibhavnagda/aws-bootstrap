@@ -4,7 +4,7 @@ Parameters:
   EC2InstanceType:
     Type: String
   EC2AMI:
-    Type: 'String'
+    Type: String
   CodePipelineBucket:
     Type: String
     Description: 'The S3 bucket for CodePipeline artifacts.'
@@ -152,6 +152,7 @@ Resources:
       Parameters:
         EC2InstanceType: !Ref EC2InstanceType
         EC2AMI: !Ref EC2AMI
+
 
 Outputs:
 
